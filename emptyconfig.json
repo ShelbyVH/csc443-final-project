@@ -1,0 +1,360 @@
+{
+  "ipAddress": "127.0.0.1",
+  "port": 8080,
+  "Layers": {
+    "A": {
+      "Encoders": [
+        {
+          "name": "En1",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En2",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En3",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En4",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En5",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En6",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En7",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En8",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        }
+      ],
+      "Buttons": [
+        {
+          "name": "Btn1",
+          "press_event": "test",
+          "release_event": ""
+        },
+        {
+          "name": "Btn2",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn3",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn4",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn5",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn6",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn7",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn8",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn9",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn10",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn11",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn12",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn13",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn14",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn15",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn16",
+          "press_event": "",
+          "release_event": ""
+        }
+      ],
+      "Fader": {
+        "Something": "Something"
+      }
+    },
+    "B": {
+      "Encoders": [
+        {
+          "name": "En1",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En2",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En3",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En4",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En5",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En6",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En7",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        },
+        {
+          "name": "En8",
+          "press_event": "",
+          "release_event": "",
+          "rotate_event": {
+            "left_slow": "",
+            "left_fast": "",
+            "right_slow": "",
+            "right_fast": ""
+          }
+        }
+      ],
+      "Buttons": [
+        {
+          "name": "Btn1",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn2",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn3",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn4",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn5",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn6",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn7",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn8",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn9",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn10",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn11",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn12",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn13",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn14",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn15",
+          "press_event": "",
+          "release_event": ""
+        },
+        {
+          "name": "Btn16",
+          "press_event": "",
+          "release_event": ""
+        }
+      ],
+      "Fader": {
+        "Something": "Something"
+      }
+    }
+  }
+}
