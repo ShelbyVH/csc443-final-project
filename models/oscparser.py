@@ -47,12 +47,14 @@ class Encoder:
 
 @dataclass
 class Fader:
+    name: str
     Something: str
 
     @staticmethod
     def from_dict(obj: Any) -> 'Fader':
+        _name = str(obj.get("name"))
         _Something = str(obj.get("Something"))
-        return Fader(_Something)
+        return Fader(_name,_Something)
 
 @dataclass
 class A:
@@ -92,17 +94,19 @@ class Layers:
         return Layers(_A, _B)
 
 @dataclass
-class Root:
+class OSCMap:
     ipAddress: str
     port: int
+    midiDevice: str
     Layers: Layers
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Root':
+    def from_dict(obj: Any) -> 'OSCMap':
         _ipAddress = str(obj.get("ipAddress"))
         _port = int(obj.get("port"))
+        _midiDevice = str(obj.get("midiDevice"))
         _Layers = Layers.from_dict(obj.get("Layers"))
-        return Root(_ipAddress, _port, _Layers)
+        return OSCMap(_ipAddress, _port, _midiDevice, _Layers)
 
 
 

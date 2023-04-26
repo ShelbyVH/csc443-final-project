@@ -1,2 +1,8 @@
+docstring-parser==0.15
 mido==1.2.10
+mypy-extensions==1.0.0
 python-osc==1.8.1
+python-rtmidi==1.4.9
+typed-argument-parser==1.8.0
+typing-inspect==0.8.0
+typing_extensions==4.5.0

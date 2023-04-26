@@ -1,0 +1,776 @@
+{
+  "Encoders": [
+    {
+      "name": "En1",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 0,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 0,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 1,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En2",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 1,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 1,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 2,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En3",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 2,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 2,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 3,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En4",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 3,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 3,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 4,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En5",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 4,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 4,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 5,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En6",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 5,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 5,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 6,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En7",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 6,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 6,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 7,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En8",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 7,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 7,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 8,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En1",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 24,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 24,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 11,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En2",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 25,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 25,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 12,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En3",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 26,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 26,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 13,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En4",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 27,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 27,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 14,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En5",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 28,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 28,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 15,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En6",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 29,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 29,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 16,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En7",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 30,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 30,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 17,
+        "middle": 64
+      }
+    },
+    {
+      "name": "En8",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 31,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 31,
+        "value": 0
+      },
+      "rotate_event": {
+        "type": "control_change",
+        "control": 18,
+        "middle": 64
+      }
+    }
+  ],
+  "Buttons": [
+    {
+      "name": "Btn1",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 8,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 8,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn2",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 9,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 9,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn3",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 10,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 10,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn4",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 11,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 11,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn5",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 12,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 12,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn6",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 13,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 13,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn7",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 14,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 14,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn8",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 15,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 15,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn9",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 16,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 16,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn10",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 17,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 17,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn11",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 18,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 18,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn12",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 19,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 19,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn13",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 20,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 20,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn14",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 21,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 21,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn15",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 22,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 22,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn16",
+      "layer": "A",
+      "press_event": {
+        "type": "note_on",
+        "note": 23,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 23,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn1",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 32,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 32,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn2",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 33,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 33,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn3",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 34,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 34,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn4",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 35,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 35,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn5",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 36,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 36,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn6",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 37,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 37,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn7",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 38,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 38,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn8",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 39,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 39,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn9",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 40,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 40,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn10",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 41,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 41,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn11",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 42,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 42,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn12",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 43,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 43,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn13",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 44,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 44,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn14",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 45,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 45,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn15",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 46,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 46,
+        "value": 0
+      }
+    },
+    {
+      "name": "Btn16",
+      "layer": "B",
+      "press_event": {
+        "type": "note_on",
+        "note": 47,
+        "value": 127
+      },
+      "release_event": {
+        "type": "note_off",
+        "note": 47,
+        "value": 0
+      }
+    }
+  ],
+  "Faders": [
+    {
+      "name": "FaderA",
+      "layer": "A",
+      "move_event": {
+        "type": "control_change",
+        "control": 9
+      }
+    },
+    {
+      "name": "FaderB",
+      "layer": "B",
+      "move_event": {
+        "type": "control_change",
+        "control": 10
+      }
+    }
+  ]
+}
