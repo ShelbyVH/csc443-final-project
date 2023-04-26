@@ -2,95 +2,98 @@
   "ipAddress": "127.0.0.1",
   "port": 7777,
   "midiDevice": "X-TOUCH MINI",
+  "startup": [
+    "/eos/user=0"
+  ],
   "Layers": {
     "A": {
       "Encoders": [
         {
           "name": "En1",
-          "press_event": "",
+          "press_event": "/eos/param/pan/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "left1",
-            "left_fast": "left2",
-            "right_slow": "right1",
-            "right_fast": "right2"
+            "left_slow": "/eos/wheel/fine/pan,-1",
+            "left_fast": "/eos/wheel/coarse/pan,-4",
+            "right_slow": "/eos/wheel/fine/pan,1",
+            "right_fast": "/eos/wheel/coarse/pan,4"
           }
         },
         {
           "name": "En2",
-          "press_event": "",
+          "press_event": "/eos/param/tilt/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/tilt,-1",
+            "left_fast": "/eos/wheel/coarse/tilt,-4",
+            "right_slow": "/eos/wheel/fine/tilt,1",
+            "right_fast": "/eos/wheel/coarse/tilt,4"
           }
         },
         {
           "name": "En3",
-          "press_event": "",
+          "press_event": "/eos/param/zoom/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/zoom,-1",
+            "left_fast": "/eos/wheel/coarse/zoom,-4",
+            "right_slow": "/eos/wheel/fine/zoom,1",
+            "right_fast": "/eos/wheel/coarse/zoom,4"
           }
         },
         {
           "name": "En4",
-          "press_event": "",
+          "press_event": "/eos/param/iris/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/iris,-1",
+            "left_fast": "/eos/wheel/coarse/iris,-4",
+            "right_slow": "/eos/wheel/fine/iris,1",
+            "right_fast": "/eos/wheel/coarse/iris,4"
           }
         },
         {
           "name": "En5",
-          "press_event": "",
+          "press_event": "/eos/param/edge/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/edge,-1",
+            "left_fast": "/eos/wheel/coarse/edge,-4",
+            "right_slow": "/eos/wheel/fine/edge,1",
+            "right_fast": "/eos/wheel/coarse/edge,4"
           }
         },
         {
           "name": "En6",
-          "press_event": "",
+          "press_event": "/eos/param/red/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/red,-1",
+            "left_fast": "/eos/wheel/coarse/red,-4",
+            "right_slow": "/eos/wheel/fine/red,1",
+            "right_fast": "/eos/wheel/coarse/red,4"
           }
         },
         {
           "name": "En7",
-          "press_event": "",
+          "press_event": "/eos/param/green/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/green,-1",
+            "left_fast": "/eos/wheel/coarse/green,-4",
+            "right_slow": "/eos/wheel/fine/green,1",
+            "right_fast": "/eos/wheel/coarse/green,4"
           }
         },
         {
           "name": "En8",
-          "press_event": "",
+          "press_event": "/eos/param/blue/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/blue,-1",
+            "left_fast": "/eos/wheel/coarse/blue,-4",
+            "right_slow": "/eos/wheel/fine/blue,1",
+            "right_fast": "/eos/wheel/coarse/blue,4"
           }
         }
       ],
@@ -178,97 +181,97 @@
       ],
       "Fader": {
         "name": "FaderA",
-        "Something": "Something"
+        "move_event": "/eos/at="
       }
     },
     "B": {
       "Encoders": [
         {
           "name": "En1",
-          "press_event": "",
+          "press_event": "/eos/param/pan/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/pan,-1",
+            "left_fast": "/eos/wheel/coarse/pan,-4",
+            "right_slow": "/eos/wheel/fine/pan,1",
+            "right_fast": "/eos/wheel/coarse/pan,4"
           }
         },
         {
           "name": "En2",
-          "press_event": "",
+          "press_event": "/eos/param/tilt/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/tilt,-1",
+            "left_fast": "/eos/wheel/coarse/tilt,-4",
+            "right_slow": "/eos/wheel/fine/tilt,1",
+            "right_fast": "/eos/wheel/coarse/tilt,4"
           }
         },
         {
           "name": "En3",
-          "press_event": "",
+          "press_event": "/eos/param/zoom/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/zoom,-1",
+            "left_fast": "/eos/wheel/coarse/zoom,-4",
+            "right_slow": "/eos/wheel/fine/zoom,1",
+            "right_fast": "/eos/wheel/coarse/zoom,4"
           }
         },
         {
           "name": "En4",
-          "press_event": "",
+          "press_event": "/eos/param/iris/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/iris,-1",
+            "left_fast": "/eos/wheel/coarse/iris,-4",
+            "right_slow": "/eos/wheel/fine/iris,1",
+            "right_fast": "/eos/wheel/coarse/iris,4"
           }
         },
         {
           "name": "En5",
-          "press_event": "",
+          "press_event": "/eos/param/edge/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/edge,-1",
+            "left_fast": "/eos/wheel/coarse/edge,-4",
+            "right_slow": "/eos/wheel/fine/edge,1",
+            "right_fast": "/eos/wheel/coarse/edge,4"
           }
         },
         {
           "name": "En6",
-          "press_event": "",
+          "press_event": "/eos/param/red/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/red,-1",
+            "left_fast": "/eos/wheel/coarse/red,-4",
+            "right_slow": "/eos/wheel/fine/red,1",
+            "right_fast": "/eos/wheel/coarse/red,4"
           }
         },
         {
           "name": "En7",
-          "press_event": "",
+          "press_event": "/eos/param/green/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/green,-1",
+            "left_fast": "/eos/wheel/coarse/green,-4",
+            "right_slow": "/eos/wheel/fine/green,1",
+            "right_fast": "/eos/wheel/coarse/green,4"
           }
         },
         {
           "name": "En8",
-          "press_event": "",
+          "press_event": "/eos/param/blue/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "",
-            "left_fast": "",
-            "right_slow": "",
-            "right_fast": ""
+            "left_slow": "/eos/wheel/fine/blue,-1",
+            "left_fast": "/eos/wheel/coarse/blue,-4",
+            "right_slow": "/eos/wheel/fine/blue,1",
+            "right_fast": "/eos/wheel/coarse/blue,4"
           }
         }
       ],
@@ -356,7 +359,7 @@
       ],
       "Fader": {
         "name": "FaderB",
-        "Something": "Something"
+        "move_event": "/eos/at="
       }
     }
   }

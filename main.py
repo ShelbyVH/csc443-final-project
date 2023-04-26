@@ -30,6 +30,21 @@ midimap = MidiMap.from_dict(json.loads(midijson))
 # Create OSC Client
 oscClient = SimpleUDPClient(oscmap.ipAddress, oscmap.port)
 
+def oscSender(oscCommand: str):
+    if (len(oscCommand) != 0):
+        if ("," in oscCommand):
+            oscCommand, oscValue = oscCommand.split(",",1)
+            oscClient.send_message(oscCommand, oscValue)
+        elif ("=" in oscCommand): # For faders
+            oscCommand, oscValue = oscCommand.split("=",1)
+            oscClient.send_message(oscCommand, oscValue)
+        else: 
+            oscValue = 1
+            oscClient.send_message(oscCommand, oscValue)
+
+# Excute startup commands
+for command in oscmap.startup:
+    oscSender(command)
 
 # Select the correct input port for X-TOUCH MINI
 with open_input(oscmap.midiDevice) as inport:
@@ -46,39 +61,40 @@ with open_input(oscmap.midiDevice) as inport:
                             if (enc.name == encoder.name):
                                 # print(enc)    
                                 if (msg.value > encoder.rotate_event.middle+2):
-                                    oscClient.send_message(enc.rotate_event.right_fast, 1)
+                                    oscSender(enc.rotate_event.right_fast)
                                 elif (msg.value > encoder.rotate_event.middle):
-                                    oscClient.send_message(enc.rotate_event.right_slow, 1)                                    
+                                    oscSender(enc.rotate_event.right_slow)                                    
                                 elif (msg.value < encoder.rotate_event.middle-2):
-                                    oscClient.send_message(enc.rotate_event.left_fast, 1)                                    
+                                    oscSender(enc.rotate_event.left_fast)                                    
                                 elif (msg.value < encoder.rotate_event.middle):
-                                    oscClient.send_message(enc.rotate_event.left_slow, 1)
+                                    oscSender(enc.rotate_event.left_slow)
                                                                 
                     elif (encoder.layer == "B"):
                         for enc in oscmap.Layers.B.Encoders:
                             if (enc.name == encoder.name):
                                 if (msg.value > encoder.rotate_event.middle+2):
-                                    oscClient.send_message(enc.rotate_event.right_fast, 1)
+                                    oscSender(enc.rotate_event.right_fast)
                                 elif (msg.value > encoder.rotate_event.middle):
-                                    oscClient.send_message(enc.rotate_event.right_slow, 1)                                    
+                                    oscSender(enc.rotate_event.right_slow)
                                 elif (msg.value < encoder.rotate_event.middle-2):
-                                    oscClient.send_message(enc.rotate_event.left_fast, 1)                                    
+                                    oscSender(enc.rotate_event.left_fast)
                                 elif (msg.value < encoder.rotate_event.middle):
-                                    oscClient.send_message(enc.rotate_event.left_slow, 1)
-                                
+                                    oscSender(enc.rotate_event.left_slow)
+                                    
                 for fader in midimap.Faders:
                     if (fader.move_event.control == msg.control):
                         # print(f'OSC {fader.move_event.control} {msg.value}')
                         if (fader.layer == "A"):
                             fad = oscmap.Layers.A.Fader
                             if (fad.name == fader.name):
-                                print(floor(msg.value/127*256))
-                                # oscClient.send_message(fad.move_event., msg.value/127)
+                                # print(floor(msg.value/127*100))
+                                oscSender(fad.move_event + str(floor(msg.value/127*100)))
                         elif (fader.layer == "B"):
                             fad = oscmap.Layers.B.Fader
                             if (fad.name == fader.name):
-                                print(floor(msg.value/127*256))
-                                # oscClient.send_message(fad.move_event.address, msg.value/127)
+                                if fad.move_event[-1] == "=":
+                                    # print(floor(msg.value/127*256))
+                                    oscSender(fad.move_event + str(floor(msg.value/127*256)))
                                 
         elif (msg.type == "note_on"):
             for button in midimap.Buttons:
@@ -87,12 +103,11 @@ with open_input(oscmap.midiDevice) as inport:
                     if (button.layer == "A"):
                         for btn in oscmap.Layers.A.Buttons:
                             if (btn.name == button.name):
-                                print(btn.press_event)
-                                oscClient.send_message(btn.press_event, 1)
+                                oscSender(btn.press_event)
                     elif (button.layer == "B"):
                         for btn in oscmap.Layers.B.Buttons:
                             if (btn.name == button.name):
-                                oscClient.send_message(btn.press_event, 1)
+                                oscSender(btn.press_event)
                                 
             for encoder in midimap.Encoders:
                 if (encoder.press_event.note == msg.note):
@@ -100,11 +115,11 @@ with open_input(oscmap.midiDevice) as inport:
                     if (encoder.layer == "A"):
                         for enc in oscmap.Layers.A.Encoders:
                             if (enc.name == encoder.name):
-                                oscClient.send_message(enc.press_event, 1)
+                                oscSender(enc.press_event)
                     elif (encoder.layer == "B"):
                         for enc in oscmap.Layers.B.Encoders:
                             if (enc.name == encoder.name):
-                                oscClient.send_message(enc.press_event, 1)
+                                oscSender(enc.press_event)
                                 
         elif (msg.type == "note_off"):
             for button in midimap.Buttons:
@@ -113,11 +128,11 @@ with open_input(oscmap.midiDevice) as inport:
                     if (button.layer == "A"):
                         for btn in oscmap.Layers.A.Buttons:
                             if (btn.name == button.name):
-                                oscClient.send_message(btn.release_event, 1)
+                                oscSender(btn.release_event)
                     elif (button.layer == "B"):
                         for btn in oscmap.Layers.B.Buttons:
                             if (btn.name == button.name):
-                                oscClient.send_message(btn.release_event, 1)
+                                oscSender(btn.release_event)
                                 
             for encoder in midimap.Encoders:
                 if (encoder.release_event.note == msg.note):
@@ -125,9 +140,9 @@ with open_input(oscmap.midiDevice) as inport:
                     if (encoder.layer == "A"):
                         for enc in oscmap.Layers.A.Encoders:
                             if (enc.name == encoder.name):
-                                oscClient.send_message(enc.release_event, 1)
+                                oscSender(enc.release_event)
                     elif (encoder.layer == "B"):
                         for enc in oscmap.Layers.B.Encoders:
                             if (enc.name == encoder.name):
-                                oscClient.send_message(enc.release_event, 1)
+                                oscSender(enc.release_event)
                                 
