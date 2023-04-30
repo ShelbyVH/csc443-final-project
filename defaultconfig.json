@@ -100,82 +100,82 @@
       "Buttons": [
         {
           "name": "Btn1",
-          "press_event": "test",
+          "press_event": "/eos/macro/fire=101",
           "release_event": ""
         },
         {
           "name": "Btn2",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=102",
           "release_event": ""
         },
         {
           "name": "Btn3",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=103",
           "release_event": ""
         },
         {
           "name": "Btn4",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=104",
           "release_event": ""
         },
         {
           "name": "Btn5",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=105",
           "release_event": ""
         },
         {
           "name": "Btn6",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=106",
           "release_event": ""
         },
         {
           "name": "Btn7",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=107",
           "release_event": ""
         },
         {
           "name": "Btn8",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=108",
           "release_event": ""
         },
         {
           "name": "Btn9",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=109",
           "release_event": ""
         },
         {
           "name": "Btn10",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=110",
           "release_event": ""
         },
         {
           "name": "Btn11",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=111",
           "release_event": ""
         },
         {
           "name": "Btn12",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=112",
           "release_event": ""
         },
         {
           "name": "Btn13",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=113",
           "release_event": ""
         },
         {
           "name": "Btn14",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=114",
           "release_event": ""
         },
         {
           "name": "Btn15",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=115",
           "release_event": ""
         },
         {
           "name": "Btn16",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=116",
           "release_event": ""
         }
       ],
@@ -191,10 +191,10 @@
           "press_event": "/eos/param/pan/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/pan,-1",
-            "left_fast": "/eos/wheel/coarse/pan,-4",
-            "right_slow": "/eos/wheel/fine/pan,1",
-            "right_fast": "/eos/wheel/coarse/pan,4"
+            "left_slow": "/eos/wheel/fine/pan,-2",
+            "left_fast": "/eos/wheel/coarse/pan,-6",
+            "right_slow": "/eos/wheel/fine/pan,2",
+            "right_fast": "/eos/wheel/coarse/pan,6"
           }
         },
         {
@@ -202,10 +202,10 @@
           "press_event": "/eos/param/tilt/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/tilt,-1",
-            "left_fast": "/eos/wheel/coarse/tilt,-4",
-            "right_slow": "/eos/wheel/fine/tilt,1",
-            "right_fast": "/eos/wheel/coarse/tilt,4"
+            "left_slow": "/eos/wheel/fine/tilt,-2",
+            "left_fast": "/eos/wheel/coarse/tilt,-6",
+            "right_slow": "/eos/wheel/fine/tilt,2",
+            "right_fast": "/eos/wheel/coarse/tilt,6"
           }
         },
         {
@@ -213,10 +213,10 @@
           "press_event": "/eos/param/zoom/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/zoom,-1",
-            "left_fast": "/eos/wheel/coarse/zoom,-4",
-            "right_slow": "/eos/wheel/fine/zoom,1",
-            "right_fast": "/eos/wheel/coarse/zoom,4"
+            "left_slow": "/eos/wheel/fine/zoom,-2",
+            "left_fast": "/eos/wheel/coarse/zoom,-6",
+            "right_slow": "/eos/wheel/fine/zoom,2",
+            "right_fast": "/eos/wheel/coarse/zoom,6"
           }
         },
         {
@@ -224,10 +224,10 @@
           "press_event": "/eos/param/iris/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/iris,-1",
-            "left_fast": "/eos/wheel/coarse/iris,-4",
-            "right_slow": "/eos/wheel/fine/iris,1",
-            "right_fast": "/eos/wheel/coarse/iris,4"
+            "left_slow": "/eos/wheel/fine/iris,-2",
+            "left_fast": "/eos/wheel/coarse/iris,-6",
+            "right_slow": "/eos/wheel/fine/iris,2",
+            "right_fast": "/eos/wheel/coarse/iris,6"
           }
         },
         {
@@ -235,10 +235,10 @@
           "press_event": "/eos/param/edge/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/edge,-1",
-            "left_fast": "/eos/wheel/coarse/edge,-4",
-            "right_slow": "/eos/wheel/fine/edge,1",
-            "right_fast": "/eos/wheel/coarse/edge,4"
+            "left_slow": "/eos/wheel/fine/edge,-2",
+            "left_fast": "/eos/wheel/coarse/edge,-6",
+            "right_slow": "/eos/wheel/fine/edge,2",
+            "right_fast": "/eos/wheel/coarse/edge,6"
           }
         },
         {
@@ -246,10 +246,10 @@
           "press_event": "/eos/param/red/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/red,-1",
-            "left_fast": "/eos/wheel/coarse/red,-4",
-            "right_slow": "/eos/wheel/fine/red,1",
-            "right_fast": "/eos/wheel/coarse/red,4"
+            "left_slow": "/eos/wheel/fine/red,-2",
+            "left_fast": "/eos/wheel/coarse/red,-6",
+            "right_slow": "/eos/wheel/fine/red,2",
+            "right_fast": "/eos/wheel/coarse/red,6"
           }
         },
         {
@@ -257,10 +257,10 @@
           "press_event": "/eos/param/green/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/green,-1",
-            "left_fast": "/eos/wheel/coarse/green,-4",
-            "right_slow": "/eos/wheel/fine/green,1",
-            "right_fast": "/eos/wheel/coarse/green,4"
+            "left_slow": "/eos/wheel/fine/green,-2",
+            "left_fast": "/eos/wheel/coarse/green,-6",
+            "right_slow": "/eos/wheel/fine/green,2",
+            "right_fast": "/eos/wheel/coarse/green,6"
           }
         },
         {
@@ -268,92 +268,92 @@
           "press_event": "/eos/param/blue/home",
           "release_event": "",
           "rotate_event": {
-            "left_slow": "/eos/wheel/fine/blue,-1",
-            "left_fast": "/eos/wheel/coarse/blue,-4",
-            "right_slow": "/eos/wheel/fine/blue,1",
-            "right_fast": "/eos/wheel/coarse/blue,4"
+            "left_slow": "/eos/wheel/fine/blue,-2",
+            "left_fast": "/eos/wheel/coarse/blue,-6",
+            "right_slow": "/eos/wheel/fine/blue,2",
+            "right_fast": "/eos/wheel/coarse/blue,6"
           }
         }
       ],
       "Buttons": [
         {
           "name": "Btn1",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=201",
           "release_event": ""
         },
         {
           "name": "Btn2",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=202",
           "release_event": ""
         },
         {
           "name": "Btn3",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=203",
           "release_event": ""
         },
         {
           "name": "Btn4",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=204",
           "release_event": ""
         },
         {
           "name": "Btn5",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=205",
           "release_event": ""
         },
         {
           "name": "Btn6",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=206",
           "release_event": ""
         },
         {
           "name": "Btn7",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=207",
           "release_event": ""
         },
         {
           "name": "Btn8",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=208",
           "release_event": ""
         },
         {
           "name": "Btn9",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=209",
           "release_event": ""
         },
         {
           "name": "Btn10",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=210",
           "release_event": ""
         },
         {
           "name": "Btn11",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=211",
           "release_event": ""
         },
         {
           "name": "Btn12",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=212",
           "release_event": ""
         },
         {
           "name": "Btn13",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=213",
           "release_event": ""
         },
         {
           "name": "Btn14",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=214",
           "release_event": ""
         },
         {
           "name": "Btn15",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=215",
           "release_event": ""
         },
         {
           "name": "Btn16",
-          "press_event": "",
+          "press_event": "/eos/macro/fire=216",
           "release_event": ""
         }
       ],

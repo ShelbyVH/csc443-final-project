@@ -87,14 +87,19 @@ with open_input(oscmap.midiDevice) as inport:
                         if (fader.layer == "A"):
                             fad = oscmap.Layers.A.Fader
                             if (fad.name == fader.name):
+                                if fad.move_event[-1] == "=":
                                 # print(floor(msg.value/127*100))
-                                oscSender(fad.move_event + str(floor(msg.value/127*100)))
+                                    oscSender(fad.move_event + str(floor(msg.value/127*100)))
+                                else:
+                                    oscSender(fad.move_event)
                         elif (fader.layer == "B"):
                             fad = oscmap.Layers.B.Fader
                             if (fad.name == fader.name):
                                 if fad.move_event[-1] == "=":
                                     # print(floor(msg.value/127*256))
                                     oscSender(fad.move_event + str(floor(msg.value/127*256)))
+                                else:
+                                    oscSender(fad.move_event)
                                 
         elif (msg.type == "note_on"):
             for button in midimap.Buttons:
