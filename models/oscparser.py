@@ -119,6 +119,7 @@ class OSCMap:
         return OSCMap(_ipAddress, _port, _midiDevice, _startup, _Layers)
 
 
+# Generated using https://json2csharp.com/code-converters/json-to-python
 # Example Usage
 # jsonstring = json.loads(myjsonstring)
 # root = Root.from_dict(jsonstring)

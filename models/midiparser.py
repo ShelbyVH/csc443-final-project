@@ -121,6 +121,7 @@ class MidiMap:
         return MidiMap(_startup, _Encoders, _Buttons, _Faders)
 
 
+# Generated using https://json2csharp.com/code-converters/json-to-python
 # Example Usage
 # jsonstring = json.loads(myjsonstring)
 # root = Root.from_dict(jsonstring)
