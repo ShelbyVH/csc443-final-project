@@ -3,7 +3,7 @@
   "port": 7777,
   "midiDevice": "X-TOUCH MINI",
   "startup": [
-    "/eos/user=0"
+    "/eos/user=-1"
   ],
   "Layers": {
     "A": {

@@ -1,4 +1,7 @@
 {
+  "startup": [
+    ""
+  ],
   "Encoders": [
     {
       "name": "En1",
