@@ -49,16 +49,17 @@ def oscSender(oscCommand: str):
 for command in oscmap.startup:
     oscSender(command)
 
-print(f'Connected to {oscmap.ipAddress}:{oscmap.port}')
-print(f'Using {oscmap.midiDevice} as MIDI Device')
+print(f"Connected to {oscmap.ipAddress}:{oscmap.port}")
+print(f"Using {oscmap.midiDevice} as MIDI Device")
 
 # with open_output(oscmap.midiDevice) as outport:
-    # outport.send(Message('control_change', control=1, value=0))
-    
+# outport.send(Message('control_change', control=1, value=0))
+
 
 # Select the correct input port for X-TOUCH MINI
+faderPos = 0
 with open_input(oscmap.midiDevice) as inport:
-    print("Waiting for messages from X-TOUCH MINI")
+    # print("Waiting for messages from X-TOUCH MINI")
     msg: Message
     for msg in inport:
         if msg.type == "control_change":
@@ -98,22 +99,22 @@ with open_input(oscmap.midiDevice) as inport:
                             fad = oscmap.Layers.A.Fader
                             if fad.name == fader.name:
                                 if fad.move_event[-1] == "=":
-                                    # print(floor(msg.value/127*100))
-                                    oscSender(
-                                        fad.move_event
-                                        + str(floor(msg.value / 127 * 100))
-                                    )
+                                    value = round(msg.value / 127 * 100) # Might change to be any range Ex. -180 to 180
+                                    if value != faderPos:
+                                        # print(value, faderPos)
+                                        oscSender(fad.move_event + str(value))
+                                        faderPos = value
                                 else:
                                     oscSender(fad.move_event)
                         elif fader.layer == "B":
                             fad = oscmap.Layers.B.Fader
                             if fad.name == fader.name:
                                 if fad.move_event[-1] == "=":
-                                    # print(floor(msg.value/127*256))
-                                    oscSender(
-                                        fad.move_event
-                                        + str(floor(msg.value / 127 * 256))
-                                    )
+                                    value = round(msg.value / 127 * 100) # Might change to be any range Ex. -270 to 270
+                                    if value != faderPos:
+                                        # print(value, faderPos)
+                                        oscSender(fad.move_event + str(value))
+                                        faderPos = value
                                 else:
                                     oscSender(fad.move_event)
 

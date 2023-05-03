@@ -178,7 +178,8 @@
         }
       ],
       "Fader": {
-        "Something": "Something"
+        "name": "FaderB",
+        "move_event": ""
       }
     },
     "B": {
@@ -355,7 +356,8 @@
         }
       ],
       "Fader": {
-        "Something": "Something"
+        "name": "FaderB",
+        "move_event": ""
       }
     }
   }
